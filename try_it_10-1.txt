@@ -1,0 +1,14 @@
+I started this task by importing the sunspots .csv file (the once provided was not a Pandas DataFrame). For both data sets, I converted the date/time objects to date_time and set them as the index, followed by dropping the redundant columns.
+
+I first plotted the results from seasonal_decompose but the amount of data for 'sunspots' is overwhelmingly rage so I truncated the dataset from 1940-1970.
+I then ran seasonal_decompose again and plotted both data sets as follows:
+
+1. What the tatsmodels cals 'decomposed', we see the two data sets expressing behavior very similar to the original (therefore, I am not sure if 'decomposed' in the documentation is accurate.) Regardless, here we can see a sinusoidal graph for the sun spots and a 'step' trend for 'air' that looks almost exponential.
+
+2. This is the 'seasonal' plot of the two data sets. What I found interesting is how consistent both are in their respective ways. By looking at these, we see an almost artificial precision, or a stochastic rhythm that is idealized. We can glean this from the original data but I was surprised about the precision.
+
+3. This is the 'trend' graph. We see an air progressing in a linear & upward manner while the sunspot data undulates as expected.
+
+4. This is the 'residual' plot. I was surprised by this since I thought that both data sets would display this quality quite differently. In the overlapping area, we can almost see an 'identical' trend suggesting that there could possibly be features in common; can sunspots affect airline travel?
+
+5. Finally, I was curious about the 'weights' parameter ('The weights used to reduce outlier influence.'). I expected this plot to be non-linear but perhaps this only shows my lack of experience :)
